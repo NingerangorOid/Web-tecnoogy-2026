@@ -1,11 +1,102 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+@import url('fonts.css');
 
-.test {
-    color: yellow !important;
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
 }
 
-.test {
-    color: red !important;
+
+.text-paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.title-h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.title-h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.title-h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.title-h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.form-input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    padding: 12px; /* Добавлено для красоты, чтобы текст не прилипал */
+    width: 100%;   /* Чтобы поля выглядели аккуратно */
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-submit {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: red;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    padding: 14px 32px; /* Добавлено для соответствия стилю Figma */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #4a88c0;
+}
+
+
+.breadcrumbs {
+    font-size: 14px;
+    color: #1F3F68;
+    margin-bottom: 24px;
+}
+
+.breadcrumbs a {
+    color: #1F3F68;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .separator {
+    margin: 0 8px;
+    color: #888;
+}
+
+.contact-form-bg {
+
+    background-image: src("static/images/сырники.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: red;
+    border-radius: 15px;
+    /* Масенькая белая подложка, чтобы текст читался на фоне картинки */
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: overlay;
+    max-width: 500px;
 }
