@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ИТ СТУДИЯ — лабораторная 3</title>
+
+
+</head>
+<body>
+<header class="site-header">
+    <div class="container site-header__inner">
+        <a class="logo" href="#home">ИТ СТУДИЯ</a>
+        <details class="mobile-nav">
+            <summary aria-label="Открыть меню">☰</summary>
+            <nav aria-label="Мобильное меню">
+                <a href="#services">Услуги</a>
+                <a href="#team">Команда</a>
+                <a href="#cases">Проекты</a>
+                <a href="#faq">Вопросы и ответы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </details>
+        <nav class="site-nav" aria-label="Основное меню"><a href="#services">Услуги</a> <a href="#team">Команда</a> <a
+                href="#cases">Проекты</a><a href="#faq">Вопросы и ответы</a><a href="#contacts">Контакты</a></nav>
+        <ul class="header-contacts">
+            <li><a href="tel:+71111111111">+7 (111) 111 11 11</a></li>
+            <li><a href="tel:+71111111112">+7 (111) 111 11 12</a></li>
+            <li><a href="mailto:itcompany@mail.com">✉ itcompany@mail.com</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="hero" id="home">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <h1>Разработка <span class="accent">мобильных приложений</span> и <span
+                        class="accent">веб-сервисов</span> любой сложности</h1>
+                <p>Создаем приложения для iOS и Android, чтобы ваши клиенты могли пользоваться услугами бизнеса прямо со
+                    своего телефона.</p>
+                <form class="contact-form contact-form--consultation">
+                    <h2 class="contact-form__title">Оставьте контакты — мы перезвоним в течение 30 минут</h2>
+                    <div class="contact-form__fields">
+                        <label>Номер телефона<input type="tel" name="phone" placeholder="+7 (111) 111-11-11" required
+                                                    autocomplete="tel" pattern="[+0-9 ()-]{7,25}"></label>
+                        <label>Имя и фамилия<input type="text" name="name" placeholder="Ваше имя и фамилия" required
+                                                   autocomplete="name"></label>
+
+                        <button class="button" type="submit">Получить консультацию</button>
+                    </div>
+                    <p class="contact-form__status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+            <figure class="hero__art">
+                <img src="assets/3-column-left.webp" alt="Примеры интерфейсов мобильных приложений" width="242"
+                     height="980">
+                <figcaption>Интерфейсы мобильных приложений</figcaption>
+            </figure>
+        </div>
+    </section>
+    <hr>
+    <section class="services section" id="services">
+        <div class="container services__inner">
+            <div class="services__technologies"><h2>Полный цикл разработки</h2>
+                <p>Используем проверенные технологии</p>
+                <h3>Веб-разработка</h3>
+                <p>PHP / JavaScript / Node.JS / Web Socket / Vue.js / Nuxt / MySQL / Laravel / GO lang / Django /
+                    Python</p>
+                <h3>Мобильная разработка</h3>
+                <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit
+                    Test / Navigation</p>
+            </div>
+            <nav class="services__list" aria-label="Услуги по разработке"><a href="#cases">Разработка для iOS
+                <span>›</span></a><a href="#cases">Разработка для Android <span>›</span></a><a href="#cases">Разработка
+                веб-сервисов <span>›</span></a><a href="#cases">Проектирование интерфейсов <span>›</span></a><a
+                    href="#stages">Тестирование <span>›</span></a><a href="#stages">Запуск <span>›</span></a><a
+                    href="#project">ИТ-консалтинг <span>›</span></a></nav>
+        </div>
+    </section>
+    <hr>
+    <section class="industries section">
+        <div class="container"><h2>Разработали более <span class="accent">100</span><br>проектов в <span class="accent">15</span>
+            отраслях</h2>
+            <ul class="industries__list">
+                <li>Социальные сети</li>
+                <li>Фитнес и спорт</li>
+                <li>Банки</li>
+                <li>Строительство</li>
+                <li>Игровые проекты</li>
+                <li>Образование</li>
+                <li>Авто и транспорт</li>
+                <li>Медицина и здоровье</li>
+                <li>Рестораны и доставка еды</li>
+                <li>Маркетплейсы</li>
+                <li>Дополненная реальность</li>
+                <li>Телевидение</li>
+                <li>Стартапы</li>
+                <li>Религия</li>
+                <li>Онлайн-курсы</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="cases section" id="cases">
+        <div class="container">
+            <h2>Проекты, которыми мы гордимся</h2>
+            <p class="section-intro">Мы гордимся сотрудничеством с нашими клиентами и ценим долгосрочные партнерские
+                отношения.</p>
+            <div class="cases__navigation">
+                <ul>
+                    <li><a href="#case-iteka" aria-current="true">I-teka</a></li>
+                    <li><a href="#case-iteka">Daullet­ten</a></li>
+                    <li><a href="#case-iteka">Guru Bosch</a></li>
+                    <li><a href="#case-iteka">Santo</a></li>
+                    <li><a href="#case-iteka">Home Credit Bank</a></li>
+                    <li><a href="#case-iteka">BI Partners</a></li>
+                    <li><a href="#case-iteka">Europharma</a></li>
+                </ul>
+                <a class="button" href="#project">Еще 100 проектов</a></div>
+            <article class="case" id="case-iteka">
+                <div class="case__content">
+                    <h3>I-teka</h3>
+                    <p>Приложение помогает найти нужные лекарства в аптеках города. Во время карантина оно помогло
+                        многим людям быстрее получить необходимую помощь.</p>
+                    <p class="muted">Бизнес-анализ / iOS / Android / Тестирование / Дизайн интерфейсов</p>
+                    <ul class="case__tags">
+                        <li>Российская Федерация</li>
+                        <li>Медицина</li>
+                    </ul>
+                    <dl class="stats">
+                        <div>
+                            <dt>400%</dt>
+                            <dd>Рост числа пользователей</dd>
+                        </div>
+                        <div>
+                            <dt>+ 200 000</dt>
+                            <dd>Активных пользователей</dd>
+                        </div>
+                    </dl>
+                    <div class="store-badges"><a href="https://www.apple.com/app-store/">Скачать в<br><strong>App
+                        Store</strong></a>
+                        <a href="https://play.google.com/store">Скачать в<br><strong>Google Play</strong></a></div>
+                </div>
+                <div class="reference-art reference-art--case" role="img"
+                     aria-label="Приложение I-teka на двух смартфонах"></div>
+            </article>
+        </div>
+    </section>
+    <hr>
+    <section class="project section" id="project">
+        <div class="container project__inner">
+            <div><h2>Обсудим<br>ваш проект</h2>
+                <p>Поможем определить возможности приложения, стоимость и сроки его разработки.</p></div>
+            <form class="contact-form contact-form--project">
+
+                <div class="contact-form__fields">
+                    <label>Номер телефона<input type="tel" name="phone" placeholder="+7 (111) 111-11-11" required
+                                                autocomplete="tel" pattern="[+0-9 ()-]{7,25}"></label>
+                    <label>Имя и фамилия<input type="text" name="name" placeholder="Ваше имя и фамилия" required
+                                               autocomplete="name"></label>
+
+                    <button class="button" type="submit">Обсудить проект</button>
+                </div>
+                <p class="contact-form__status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+    <hr>
+    <section class="stages section" id="stages">
+        <div class="container"><h2>Этапы разработки приложения</h2>
+            <ol class="stages__list">
+                <li>
+                    <article class="stage"><h3><span aria-hidden="true">◉</span>Анализ</h3>
+                        <p>Составляем техническое задание с учетом бизнес-процессов заказчика, используемых технологий и
+                            потребностей пользователей.</p></article>
+                </li>
+                <li>
+                    <article class="stage"><h3><span aria-hidden="true">◇</span>Дизайн</h3>
+                        <p>Адаптируем фирменный стиль заказчика к требованиям платформы и создаем удобные, понятные
+                            интерфейсы.</p></article>
+                </li>
+                <li>
+                    <article class="stage"><h3><span aria-hidden="true">▥</span>Разработка</h3>
+                        <p>Создаем расширяемую архитектуру, пишем понятный и надежный код, подключаем системы
+                            заказчика.</p></article>
+                </li>
+                <li>
+                    <article class="stage"><h3><span aria-hidden="true">♙</span>Тестирование</h3>
+                        <p>Проверяем функции приложения, исправляем ошибки и адаптируем интерфейс к экранам разных
+                            телефонов.</p></article>
+                </li>
+                <li>
+                    <article class="stage"><h3><span aria-hidden="true">♧</span>Публикация</h3>
+                        <p>Оформляем страницу приложения и публикуем его в магазинах App Store и Google Play.</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="stage"><h3><span aria-hidden="true">◎</span>Поддержка</h3>
+                        <p>Следим за стабильностью приложения, обновляем его для новых устройств и версий iOS и
+                            Android.</p></article>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <hr>
+    <section class="team section" id="team">
+        <div class="container team__inner">
+            <div class="team__content"><h2>Наша команда</h2>
+                <p>Наша студия занимается полным циклом создания цифровых продуктов: аналитикой, дизайном,
+                    веб-разработкой и мобильными приложениями.</p>
+                <dl class="stats">
+                    <div>
+                        <dt>28</dt>
+                        <dd>специалистов в команде</dd>
+                    </div>
+                    <div>
+                        <dt>100</dt>
+                        <dd>проектов</dd>
+                    </div>
+                    <div>
+                        <dt>7 лет</dt>
+                        <dd>в сфере ИТ</dd>
+                    </div>
+                </dl>
+                <p>В нашей команде есть все необходимые специалисты — от дизайнера до тестировщика. Подбираем опытных
+                    сотрудников, чтобы создавать качественные продукты.</p></div>
+            <div class="reference-art reference-art--team" role="img" aria-label="Наша команда разработчиков"></div>
+        </div>
+    </section>
+    <hr>
+    <section class="book section" id="book">
+        <div class="container book__inner">
+            <div><h2>Оставьте контакты и получите<br>книгу бесплатно</h2>
+                <form class="contact-form contact-form--book">
+
+                    <div class="contact-form__fields">
+                        <label>Номер телефона<input type="tel" name="phone" placeholder="+7 (111) 111-11-11" required
+                                                    autocomplete="tel" pattern="[+0-9 ()-]{7,25}"></label>
+                        <label>Имя и фамилия<input type="text" name="name" placeholder="Ваше имя и фамилия" required
+                                                   autocomplete="name"></label>
+                        <label class="contact-form__email">Электронная почта<input type="email" name="email"
+                                                                                   placeholder="mail@mail.com" required
+                                                                                   autocomplete="email"></label>
+                        <button class="button" type="submit">Получить книгу на почту</button>
+                    </div>
+                    <p class="contact-form__status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+            <div class="reference-art reference-art--book" role="img"
+                 aria-label="Оранжевая книга с числом десять на обложке"></div>
+        </div>
+    </section>
+    <hr>
+    <section class="faq section" id="faq">
+        <div class="container"><h2>Вопросы и ответы</h2>
+            <div class="faq__list">
+                <details>
+                    <summary>Сколько стоит разработка мобильного приложения?</summary>
+                    <p>Стоимость зависит от функций, дизайна и интеграций. Свяжитесь с нами, чтобы обсудить проект и
+                        получить оценку.</p></details>
+                <details>
+                    <summary>Предоставляете ли вы гарантию на приложение?</summary>
+                    <p>Да. Исправляем ошибки, обнаруженные в течение согласованного гарантийного срока, и предлагаем
+                        дальнейшую поддержку.</p></details>
+                <details open>
+                    <summary>Сколько времени займет разработка?</summary>
+                    <p>Сроки зависят от требований к приложению, сложности функций и пожеланий заказчика.</p>
+                    <p>В среднем разработка проекта средней сложности занимает до 3 месяцев, крупного проекта — около
+                        4–6 месяцев.</p></details>
+                <details>
+                    <summary>Как вы обеспечиваете конфиденциальность моей идеи?</summary>
+                    <p>До обсуждения деталей проекта можем подписать соглашение о неразглашении.</p></details>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="site-footer" id="contacts">
+    <div class="container">
+        <a class="logo" href="#home">ИТ СТУДИЯ</a>
+        <address class="footer-contacts"><a href="tel:+71111111111">+7 (111) 111 11 11</a><a
+                href="mailto:itcompany@mail.com">itcompany@mail.com</a><span>Разработка мобильных приложений</span>
+        </address>
+        <div class="site-footer__bottom"><p>© ИТ СТУДИЯ. Все права защищены.</p><a href="#contacts">Политика
+            конфиденциальности</a><a href="#contacts">Файлы куки</a></div>
+    </div>
+</footer>
+</body>
+</html>
