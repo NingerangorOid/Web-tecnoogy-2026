@@ -1,0 +1,12 @@
+{
+  "name": "web-lab-6",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "sass --no-source-map 6-style.scss 6-style.css",
+    "watch": "sass --watch --no-source-map 6-style.scss:6-style.css"
+  },
+  "devDependencies": {
+    "sass": "1.93.2"
+  }
+}
