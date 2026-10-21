@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ИТ СТУДИЯ — лабораторная 5</title>
+    <link rel="stylesheet" href="5-style.css">
+    <script src="5-site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container site-header__inner">
+        <a class="logo" href="#home">ИТ СТУДИЯ</a>
+        <details class="mobile-nav">
+            <summary aria-label="Открыть меню">☰</summary>
+            <nav aria-label="Мобильное меню"><a href="#services">Услуги</a><a href="#contacts">Команда</a><a
+                    href="#home">Проекты</a><a href="#contacts">Вопросы и ответы</a><a href="#contacts">Контакты</a>
+            </nav>
+        </details>
+        <nav class="site-nav" aria-label="Основное меню"><a href="#services">Услуги</a><a href="#contacts">Команда</a><a
+                href="#home">Проекты</a><a href="#contacts">Вопросы и ответы</a><a href="#contacts">Контакты</a></nav>
+        <ul class="header-contacts">
+            <li><a href="tel:+71111111111">♧ +7 (111) 111 11 11</a></li>
+            <li><a href="tel:+71111111112">♧ +7 (111) 111 11 12</a></li>
+            <li><a href="mailto:itcompany@mail.com">✉ itcompany@mail.com</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="hero" id="home">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <h1>Разработка <span class="accent">мобильных приложений</span> и <span
+                        class="accent">веб-сервисов</span> любой сложности</h1>
+                <p>Создаем приложения для iOS и Android, чтобы ваши клиенты могли пользоваться услугами бизнеса прямо со
+                    своего телефона.</p>
+                <form class="contact-form contact-form--consultation">
+                    <h2 class="contact-form__title">Оставьте контакты — мы перезвоним в течение 30 минут</h2>
+                    <div class="contact-form__fields">
+                        <label>Номер телефона<input type="tel" name="phone" placeholder="+7 (111) 111-11-11" required
+                                                    autocomplete="tel" pattern="[+0-9 ()-]{7,25}"></label>
+                        <label>Имя и фамилия<input type="text" name="name" placeholder="Ваше имя и фамилия" required
+                                                   autocomplete="name"></label>
+
+                        <button class="button" type="submit">Получить консультацию</button>
+                    </div>
+                    <p class="contact-form__status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+            <div class="hero__art" role="img" aria-label="Примеры интерфейсов мобильных приложений">
+                <div class="hero__column hero__column--left"></div>
+                <div class="hero__column hero__column--right"></div>
+            </div>
+        </div>
+    </section>
+    <section class="services section" id="services">
+        <div class="container services__inner">
+            <div class="services__technologies"><h2>Полный цикл разработки</h2>
+                <p>Используем проверенные технологии</p>
+                <h3>Веб-разработка</h3>
+                <p>PHP / JavaScript / Node.JS / Web Socket / Vue.js / Nuxt / MySQL / Laravel / GO lang / Django /
+                    Python</p>
+                <h3>Мобильная разработка</h3>
+                <p>Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit
+                    Test / Navigation</p>
+            </div>
+            <nav class="services__list" aria-label="Услуги по разработке"><a href="#home">Разработка для iOS
+                <span>›</span></a><a href="#home">Разработка для Android <span>›</span></a><a href="#home">Разработка
+                веб-сервисов <span>›</span></a><a href="#home">Проектирование интерфейсов <span>›</span></a><a
+                    href="#services">Тестирование <span>›</span></a><a href="#services">Запуск <span>›</span></a><a
+                    href="#contacts">ИТ-консалтинг <span>›</span></a></nav>
+        </div>
+    </section>
+</main>
+<footer class="site-footer" id="contacts">
+    <div class="container">
+        <a class="logo" href="#home">ИТ СТУДИЯ</a>
+        <address class="footer-contacts"><a href="tel:+71111111111">+7 (111) 111 11 11</a><a
+                href="mailto:itcompany@mail.com">itcompany@mail.com</a><span>Разработка мобильных приложений</span>
+        </address>
+        <div class="site-footer__bottom"><p>© ИТ СТУДИЯ. Все права защищены.</p><a href="#contacts">Политика
+            конфиденциальности</a><a href="#contacts">Файлы куки</a></div>
+    </div>
+</footer>
+</body>
+</html>
