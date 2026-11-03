@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Змейка — лабораторная 11</title>
+  <link rel="stylesheet" href="11-style.css">
+  <script src="11-snake.js" defer></script>
+  <script src="11-controls.js" defer></script>
+</head>
+<body><main class="app"><h1>Змейка</h1><p>Стрелки или WASD — поворот. Края поля соединены: змейка проходит на противоположную сторону. Для победы соберите 5 порций еды.</p><div class="row-controls" id="menu"><button id="playButton" class="menuButton">Старт</button><button id="newGameButton" class="menuButton">Новая игра</button><span>Счет: <output id="schet">0</output> / 5</span></div><p id="game-status" role="status"></p><div id="game-wrap"><table id="game" aria-label="Поле игры Змейка"></table></div><div class="direction-controls" aria-label="Управление на телефоне"><button type="button" data-direction="up" aria-label="Вверх">↑</button><button type="button" data-direction="left" aria-label="Влево">←</button><button type="button" data-direction="down" aria-label="Вниз">↓</button><button type="button" data-direction="right" aria-label="Вправо">→</button></div></main></body>
+</html>
