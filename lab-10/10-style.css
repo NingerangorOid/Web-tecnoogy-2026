@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font: 16px/1.5 Arial, sans-serif; color: #18213a; background: #eff3fc; }
+.app { width: min(850px, calc(100% - 32px)); margin: 40px auto; padding: 32px; border-radius: 16px; background: #fff; box-shadow: 0 12px 40px #12326012; }
+h1 { margin-top: 0; font-size: clamp(24px, 5vw, 34px); }
+button, input { font: inherit; }
+button { cursor: pointer; border: 0; border-radius: 6px; padding: 10px 20px; background: #3267ef; color: #fff; }
+button:hover { background: #214fc4; }
+button:focus-visible, input:focus-visible { outline: 3px solid #9bbaff; outline-offset: 3px; }
+button:disabled, .disabled { opacity: .5; cursor: default; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #eff3fc; padding: 20px; border-radius: 8px; }
+label { display: grid; gap: 8px; }
+input { min-width: 0; padding: 10px; border: 1px solid #ccd4e8; border-radius: 5px; }
+.row-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-block: 18px; }
+@media (max-width: 480px) { .app { margin-block: 16px; padding: 20px; } }
+
+.tic-tac-toe { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 380px; margin: 28px auto; }
+.tic-tac-toe__ceil { aspect-ratio: 1; padding: 0; border: 2px solid #ccd8f9; background: #eff3fc; color: #3267ef; font-size: clamp(36px, 10vw, 72px); font-weight: 700; }
+.tic-tac-toe__ceil:hover { background: #dce7ff; }
